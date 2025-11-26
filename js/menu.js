@@ -1,16 +1,30 @@
  let burgerIcon =document.querySelector('.burger_icon');
+let searchdesire =document.querySelector('.searchdesire');
+ let searchtext =document.querySelector('.searchtext');
+  let menu= document.querySelector('.menu');
+
+  let menuLink =document.querySelectorAll('.link');
+  menuLink.forEach((links) => {
+    links.addEventListener('click',()=>{
+    menu.classList.remove('active');
+     burgerIcon.classList.toggle('fa-bars');
+       burgerIcon.classList.toggle('fa-xmark');
+   
+  })
+  });
+  
+ 
+
  burgerIcon.addEventListener('click' , ()=>{
     
-   let menu= document.querySelector('.menu');
+  
    menu.classList.toggle('active');
    burgerIcon.classList.toggle('fa-bars');
     burgerIcon.classList.toggle('fa-xmark');
 
  })
  
- let searchdesire =document.querySelector('.searchdesire');
- let searchtext =document.querySelector('.searchtext');
-
+ 
  searchdesire.addEventListener('click' ,()=>{
     searchtext.classList.toggle('active');
     
