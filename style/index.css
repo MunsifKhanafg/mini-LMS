@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100vw;
+   height: 100vh;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.outline{
+    height: 10px;
+    width: 100vw;
+    background-color: aqua;
+}header {
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.logo {
+    margin-top: 20px;
+   margin-left: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.logo img{
+    height: 70px;
+    width: 120px;
+    
+    
+    
+
+}
+.logo .logoText{
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+    
+    
+}
+
+.menu ul{
+    display: flex;
+
+}
+.menu li{
+    
+    margin: 10px;
+      list-style: none;
+    
+}
+
+
+.menu  li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 0,20px;
+    cursor: pointer;
+}
+.info{
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.accout{
+    margin: 0 20px;
+}
+.accout button{
+     height: 50px;
+    width: 130px ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.search{
+    display: flex;
+    
+
+}
+.search .searchtext{
+    height: 50px;
+    width: 300px ;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none; 
+    display: none;  
+    margin-right: 10px; 
+}
+.search .searchtext.active{
+    display: block;
+}
+
+.menu_icon{
+    margin-top: 10px;
+    display: none;
+     margin: 0 20px;
+}
+
+i{
+ font-size: 40px;
+ color: black;
+
+}
+
+@media (max-width:1121px){
+    .menu{
+    height: 100vh;
+    width: 30%;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    background-color: blue;
+    text-align: center;
+        opacity: 0;
+    transition:  all ease 1s ;
+    }
+    .menu.active{
+        opacity: 1;
+        left:70%;
+    }
+    
+    .menu ul{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+       line-height: 60px;
+    }
+    .menu_icon{
+        display: flex;
+    }
+    
+    .search .searchtext{
+        position: absolute;
+        top: 100%;
+        left: 50px;
+        height: 50px;
+        width:80vw;
+        
+    }
+}
+
+
