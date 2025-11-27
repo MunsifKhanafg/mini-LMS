@@ -6,10 +6,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-
-    width: 100%;
    height: 100vh;
-   overflow-x: hidden;
    font-family: Arial, Helvetica, sans-serif;
 }
 .outline{
@@ -107,6 +104,7 @@ nav {
     outline: none; 
     display: none;  
     margin-right: 10px; 
+    outline: none;
 }
 .search .searchtext.active{
     display: block;
@@ -123,6 +121,80 @@ i{
  color: black;
 
 }
+/* the hero css */
+
+.hero{
+    display: flex;
+    justify-content:center;
+    background-color: lightblue;
+      height: 450px;
+}
+.heroText{
+    margin-left: 20px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heroText .text{
+    width: 500px;
+    
+}
+
+.heroText .text h1{
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+    
+}
+.heroText .text p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    
+}
+.heroText .text .button{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.heroText .text .button button {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+ 
+}
+.heroText .text .button .courese_button{
+    background-color: blue;
+    color: white;
+}
+.heroText .text .button button:hover{
+   color: white;
+    background-color: rgb(2, 56, 75);
+}
+
+
+
+
+.benner  {
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .benner img{
+    height: 400px;
+    background:transparent;
+  }
+
 
 @media (max-width:1100px){
     .menu {
@@ -164,10 +236,32 @@ i{
     }
     .info{
         margin-right: 10px;
+    
     }
-} 
+    .heroText{
+        margin-left:20px;
+        text-align: center;
+    }
+    /* .hero h1{
+        font-size: 34px;
+    } */
+    
+   
+    } 
+    @media (max-width:1030px){
+          .heroText h1{
+        font-size: 35px;
+    }
+    .benner img{
+        height: 300px;
+        width: 300px;
+
+    }
+    
+    }
 @media (max-width:780px)
  {
+
     .logo img{
         height: 50px;
         width: 100px;
@@ -179,6 +273,38 @@ i{
     .accout{
     margin: 0 ;
 }
+/* .heroText{
+    width: 200px;
+} */
+.hero{
+    display: block;
+    
+    
+}
+.benner img{
+    display: none;
+}
+.heroText{
+    
+    display: flex;
+    background: url(../image/bennar.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    height: 100%;
+}
+.heroText .text{
+    width: 300px;
+}
+.heroText .text .button button{
+    width: 140px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
    
 }
 @media screen and (max-width: 400px) {
@@ -205,66 +331,15 @@ i{
   }
   .info{
     margin-right: 30px;
-  }
-
   
 }
-.hero{
-    display: flex;
-    justify-content: space-between;
-    background-color: lightblue;
-      height: 450px;
+.heroText .text h1{
+    font-size: 23px;
 }
-.heroText{
-    margin-left: 20px;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.heroText h1{
-    font-size: 48px;
-    color: black;
-    font-weight: bold;
-    
-}
-.heroText p{
-    font-size: 20px;
-    
-}
-.heroText .button{
+
+.heroText .text .button button{
+    width: 140px;
+    font-size: 16px;
     margin: 10px;
 }
-.heroText .button button {
-    height: 40px;
-    width: 300px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
 }
-.heroText .button .courese_button{
-    background-color: blue;
-    color: white;
-}
-.heroText .button button:hover{
-   color: white;
-    background-color: rgb(2, 56, 75);
-}
-
-
-
-
-.benner  {
-    
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .benner img{
-    height: 400px;
-    background:transparent;
-  }
