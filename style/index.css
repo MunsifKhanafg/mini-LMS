@@ -254,7 +254,7 @@ i{
     }
     .benner img{
         height: 300px;
-        width: 300px;
+        
 
     }
     
@@ -273,9 +273,7 @@ i{
     .accout{
     margin: 0 ;
 }
-/* .heroText{
-    width: 200px;
-} */
+
 .hero{
     display: block;
     
@@ -297,9 +295,15 @@ i{
 }
 .heroText .text{
     width: 300px;
+    margin-bottom: -40px;
+}
+.heroText .text h1{
+    font-size: 40px;
+    font-weight: bold;
+
 }
 .heroText .text .button button{
-    width: 140px;
+    width: 170px;
     font-size: 15px;
     margin: 10px;
 }
@@ -328,17 +332,15 @@ i{
   }
   header {
     height: 80px; 
-  }
-  .info{
-    margin-right: 30px;
   
 }
 .heroText .text h1{
-    font-size: 23px;
+     font-size: 40px;
+    font-weight: bold;
 }
 
 .heroText .text .button button{
-    width: 140px;
+    width: 280px;
     font-size: 16px;
     margin: 10px;
 }
